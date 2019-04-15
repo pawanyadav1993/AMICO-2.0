@@ -1,0 +1,22 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 3,4,5 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 4 -stddev-prec 4 -col-name-width 0 -row-name-width 25 -mean-width 0 -stddev-width 0 -sig-width 0 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   1
+Resultsets: 4
+Confidence: 0.05 (two tailed)
+Sorted by:  Area_under_ROC
+Date:       28/2/19 5:10 AM
+
+
+Dataset                   (1) bayes.Naiv | (2) bayes.B (3) functio (4) functio
+------------------------------------------------------------------------------
+'tmp_train-weka.filters.u  (1)   99.1656 |   99.5759 v   99.5845 v   99.5347 v
+------------------------------------------------------------------------------
+                                 (v/ /*) |     (1/0/0)     (1/0/0)     (1/0/0)
+
+
+Key:
+(1) bayes.NaiveBayes '' 5995231201785697655
+(2) bayes.BayesNet '-D -Q bayes.net.search.local.K2 -- -P 1 -S BAYES -E bayes.net.estimate.SimpleEstimator -- -A 0.5' 746037443258775954
+(3) functions.SimpleLogistic '-I 0 -M 500 -H 50 -W 0.0' 7397710626304705059
+(4) functions.SGD '-F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1' -3732968666673530290
+
